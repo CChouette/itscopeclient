@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Boracomputer\ITScope
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,7 +27,7 @@
  * Please update the test case below to test the model.
  */
 
-namespace Swagger\Client;
+namespace Boracomputer\ITScope;
 
 /**
  * InvoiceTest Class Doc Comment
@@ -35,7 +35,7 @@ namespace Swagger\Client;
  * @category    Class */
 // * @description Details zur Liste der &lt;a href&#x3D;\&quot;https://support.itscope.com/hc/de/articles/206814239\&quot;&gt;OpenTrans 2.1 INVOICE&lt;/a&gt; Dokumente
 /**
- * @package     Swagger\Client
+ * @package     Boracomputer\ITScope
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */

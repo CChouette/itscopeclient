@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Boracomputer\ITScope
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace Boracomputer\ITScope\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
-use Swagger\Client\Configuration;
-use Swagger\Client\HeaderSelector;
-use Swagger\Client\ObjectSerializer;
+use Boracomputer\ITScope\ApiException;
+use Boracomputer\ITScope\Configuration;
+use Boracomputer\ITScope\HeaderSelector;
+use Boracomputer\ITScope\ObjectSerializer;
 
 /**
  * CompanyApi Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Boracomputer\ITScope
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -90,9 +90,9 @@ class CompanyApi
      * @param  string $type Output data format (required)
      * @param  string $view View (scope of data) (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Boracomputer\ITScope\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\Company[]
+     * @return \Boracomputer\ITScope\Model\Company[]
      */
     public function queryDistributors($type, $view)
     {
@@ -108,13 +108,13 @@ class CompanyApi
      * @param  string $type Output data format (required)
      * @param  string $view View (scope of data) (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Boracomputer\ITScope\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\Company[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Boracomputer\ITScope\Model\Company[], HTTP status code, HTTP response headers (array of strings)
      */
     public function queryDistributorsWithHttpInfo($type, $view)
     {
-        $returnType = '\Swagger\Client\Model\Company[]';
+        $returnType = '\Boracomputer\ITScope\Model\Company[]';
         $request = $this->queryDistributorsRequest($type, $view);
 
         try {
@@ -166,7 +166,7 @@ class CompanyApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Company[]',
+                        '\Boracomputer\ITScope\Model\Company[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -210,7 +210,7 @@ class CompanyApi
      */
     public function queryDistributorsAsyncWithHttpInfo($type, $view)
     {
-        $returnType = '\Swagger\Client\Model\Company[]';
+        $returnType = '\Boracomputer\ITScope\Model\Company[]';
         $request = $this->queryDistributorsRequest($type, $view);
 
         return $this->client
@@ -371,9 +371,9 @@ class CompanyApi
      * @param  string $type Output data format (required)
      * @param  string $view View (scope of data) (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Boracomputer\ITScope\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\Company[]
+     * @return \Boracomputer\ITScope\Model\Company[]
      */
     public function queryManufacturers($type, $view)
     {
@@ -389,13 +389,13 @@ class CompanyApi
      * @param  string $type Output data format (required)
      * @param  string $view View (scope of data) (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Boracomputer\ITScope\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\Company[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Boracomputer\ITScope\Model\Company[], HTTP status code, HTTP response headers (array of strings)
      */
     public function queryManufacturersWithHttpInfo($type, $view)
     {
-        $returnType = '\Swagger\Client\Model\Company[]';
+        $returnType = '\Boracomputer\ITScope\Model\Company[]';
         $request = $this->queryManufacturersRequest($type, $view);
 
         try {
@@ -447,7 +447,7 @@ class CompanyApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Company[]',
+                        '\Boracomputer\ITScope\Model\Company[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -491,7 +491,7 @@ class CompanyApi
      */
     public function queryManufacturersAsyncWithHttpInfo($type, $view)
     {
-        $returnType = '\Swagger\Client\Model\Company[]';
+        $returnType = '\Boracomputer\ITScope\Model\Company[]';
         $request = $this->queryManufacturersRequest($type, $view);
 
         return $this->client

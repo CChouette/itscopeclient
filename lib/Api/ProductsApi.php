@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Boracomputer\ITScope
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace Boracomputer\ITScope\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
-use Swagger\Client\Configuration;
-use Swagger\Client\HeaderSelector;
-use Swagger\Client\ObjectSerializer;
+use Boracomputer\ITScope\ApiException;
+use Boracomputer\ITScope\Configuration;
+use Boracomputer\ITScope\HeaderSelector;
+use Boracomputer\ITScope\ObjectSerializer;
 
 /**
  * ProductsApi Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Boracomputer\ITScope
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -89,7 +89,7 @@ class ProductsApi
      *
      * @param  string $uuid ID of the export which should be fetched (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Boracomputer\ITScope\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -105,7 +105,7 @@ class ProductsApi
      *
      * @param  string $uuid ID of the export which should be fetched (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Boracomputer\ITScope\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -318,7 +318,7 @@ class ProductsApi
      * @param  string $language Datasheet language (optional, default to )
      * @param  string $accept_language Header parameter for the datasheet language (optional, default to de)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Boracomputer\ITScope\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -338,7 +338,7 @@ class ProductsApi
      * @param  string $language Datasheet language (optional, default to )
      * @param  string $accept_language Header parameter for the datasheet language (optional, default to de)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Boracomputer\ITScope\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -600,9 +600,9 @@ class ProductsApi
      * @param  bool $plzproducts Items ending with -999, products without ITscope catalogue ID (optional, default to false)
      * @param  string $accept_language Languages of the product content, comma separated (de,en,fr,nl,it,es) (optional, default to de)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Boracomputer\ITScope\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\Product[]
+     * @return \Boracomputer\ITScope\Model\Product[]
      */
     public function queryProductByEan($ean, $type, $view, $realtime = 'false', $plzproducts = 'false', $accept_language = 'de')
     {
@@ -622,13 +622,13 @@ class ProductsApi
      * @param  bool $plzproducts Items ending with -999, products without ITscope catalogue ID (optional, default to false)
      * @param  string $accept_language Languages of the product content, comma separated (de,en,fr,nl,it,es) (optional, default to de)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Boracomputer\ITScope\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\Product[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Boracomputer\ITScope\Model\Product[], HTTP status code, HTTP response headers (array of strings)
      */
     public function queryProductByEanWithHttpInfo($ean, $type, $view, $realtime = 'false', $plzproducts = 'false', $accept_language = 'de')
     {
-        $returnType = '\Swagger\Client\Model\Product[]';
+        $returnType = '\Boracomputer\ITScope\Model\Product[]';
         $request = $this->queryProductByEanRequest($ean, $type, $view, $realtime, $plzproducts, $accept_language);
 
         try {
@@ -680,7 +680,7 @@ class ProductsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Product[]',
+                        '\Boracomputer\ITScope\Model\Product[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -732,7 +732,7 @@ class ProductsApi
      */
     public function queryProductByEanAsyncWithHttpInfo($ean, $type, $view, $realtime = 'false', $plzproducts = 'false', $accept_language = 'de')
     {
-        $returnType = '\Swagger\Client\Model\Product[]';
+        $returnType = '\Boracomputer\ITScope\Model\Product[]';
         $request = $this->queryProductByEanRequest($ean, $type, $view, $realtime, $plzproducts, $accept_language);
 
         return $this->client
@@ -926,9 +926,9 @@ class ProductsApi
      * @param  bool $realtime Realtime request for all prices (optional, default to false)
      * @param  string $accept_language Languages of the product content, comma separated (de,en,fr,nl,it,es) (optional, default to de)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Boracomputer\ITScope\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\Product[]
+     * @return \Boracomputer\ITScope\Model\Product[]
      */
     public function queryProductById($itscopeid, $type, $view, $realtime = 'false', $accept_language = 'de')
     {
@@ -947,13 +947,13 @@ class ProductsApi
      * @param  bool $realtime Realtime request for all prices (optional, default to false)
      * @param  string $accept_language Languages of the product content, comma separated (de,en,fr,nl,it,es) (optional, default to de)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Boracomputer\ITScope\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\Product[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Boracomputer\ITScope\Model\Product[], HTTP status code, HTTP response headers (array of strings)
      */
     public function queryProductByIdWithHttpInfo($itscopeid, $type, $view, $realtime = 'false', $accept_language = 'de')
     {
-        $returnType = '\Swagger\Client\Model\Product[]';
+        $returnType = '\Boracomputer\ITScope\Model\Product[]';
         $request = $this->queryProductByIdRequest($itscopeid, $type, $view, $realtime, $accept_language);
 
         try {
@@ -1005,7 +1005,7 @@ class ProductsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Product[]',
+                        '\Boracomputer\ITScope\Model\Product[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1055,7 +1055,7 @@ class ProductsApi
      */
     public function queryProductByIdAsyncWithHttpInfo($itscopeid, $type, $view, $realtime = 'false', $accept_language = 'de')
     {
-        $returnType = '\Swagger\Client\Model\Product[]';
+        $returnType = '\Boracomputer\ITScope\Model\Product[]';
         $request = $this->queryProductByIdRequest($itscopeid, $type, $view, $realtime, $accept_language);
 
         return $this->client
@@ -1241,9 +1241,9 @@ class ProductsApi
      * @param  string $type Output data format (required)
      * @param  string $view View (scope of data) (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Boracomputer\ITScope\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\ProductType[]
+     * @return \Boracomputer\ITScope\Model\ProductType[]
      */
     public function queryProductTypes($type, $view)
     {
@@ -1259,13 +1259,13 @@ class ProductsApi
      * @param  string $type Output data format (required)
      * @param  string $view View (scope of data) (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Boracomputer\ITScope\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\ProductType[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Boracomputer\ITScope\Model\ProductType[], HTTP status code, HTTP response headers (array of strings)
      */
     public function queryProductTypesWithHttpInfo($type, $view)
     {
-        $returnType = '\Swagger\Client\Model\ProductType[]';
+        $returnType = '\Boracomputer\ITScope\Model\ProductType[]';
         $request = $this->queryProductTypesRequest($type, $view);
 
         try {
@@ -1317,7 +1317,7 @@ class ProductsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ProductType[]',
+                        '\Boracomputer\ITScope\Model\ProductType[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1361,7 +1361,7 @@ class ProductsApi
      */
     public function queryProductTypesAsyncWithHttpInfo($type, $view)
     {
-        $returnType = '\Swagger\Client\Model\ProductType[]';
+        $returnType = '\Boracomputer\ITScope\Model\ProductType[]';
         $request = $this->queryProductTypesRequest($type, $view);
 
         return $this->client
@@ -1529,9 +1529,9 @@ class ProductsApi
      * @param  string $sort Sort the results (optional, default to DEFAULT)
      * @param  string $accept_language Languages of the product content, comma separated (de,en,fr,nl,it,es) (optional, default to de)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Boracomputer\ITScope\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\Product[]
+     * @return \Boracomputer\ITScope\Model\Product[]
      */
     public function queryProducts($filter, $type, $view, $realtime = 'false', $plzproducts = 'false', $page = '1', $item = '0', $sort = 'DEFAULT', $accept_language = 'de')
     {
@@ -1554,13 +1554,13 @@ class ProductsApi
      * @param  string $sort Sort the results (optional, default to DEFAULT)
      * @param  string $accept_language Languages of the product content, comma separated (de,en,fr,nl,it,es) (optional, default to de)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Boracomputer\ITScope\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\Product[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Boracomputer\ITScope\Model\Product[], HTTP status code, HTTP response headers (array of strings)
      */
     public function queryProductsWithHttpInfo($filter, $type, $view, $realtime = 'false', $plzproducts = 'false', $page = '1', $item = '0', $sort = 'DEFAULT', $accept_language = 'de')
     {
-        $returnType = '\Swagger\Client\Model\Product[]';
+        $returnType = '\Boracomputer\ITScope\Model\Product[]';
         $request = $this->queryProductsRequest($filter, $type, $view, $realtime, $plzproducts, $page, $item, $sort, $accept_language);
 
         try {
@@ -1612,7 +1612,7 @@ class ProductsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Product[]',
+                        '\Boracomputer\ITScope\Model\Product[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1670,7 +1670,7 @@ class ProductsApi
      */
     public function queryProductsAsyncWithHttpInfo($filter, $type, $view, $realtime = 'false', $plzproducts = 'false', $page = '1', $item = '0', $sort = 'DEFAULT', $accept_language = 'de')
     {
-        $returnType = '\Swagger\Client\Model\Product[]';
+        $returnType = '\Boracomputer\ITScope\Model\Product[]';
         $request = $this->queryProductsRequest($filter, $type, $view, $realtime, $plzproducts, $page, $item, $sort, $accept_language);
 
         return $this->client

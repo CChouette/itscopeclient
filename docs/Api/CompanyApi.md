@@ -1,4 +1,4 @@
-# Swagger\Client\CompanyApi
+# Boracomputer\ITScope\CompanyApi
 
 All URIs are relative to *https://api.itscope.com/2.0*
 
@@ -9,7 +9,7 @@ Method | HTTP request | Description
 
 
 # **queryDistributors**
-> \Swagger\Client\Model\Company[] queryDistributors($type, $view)
+> \Boracomputer\ITScope\Model\Company[] queryDistributors($type, $view)
 
 List of all distributors
 
@@ -20,7 +20,7 @@ A list of all distributors for master data mappings
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\CompanyApi(
+$apiInstance = new Boracomputer\ITScope\Api\CompanyApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -46,7 +46,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\Company[]**](../Model/Company.md)
+[**\Boracomputer\ITScope\Model\Company[]**](../Model/Company.md)
 
 ### Authorization
 
@@ -60,7 +60,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **queryManufacturers**
-> \Swagger\Client\Model\Company[] queryManufacturers($type, $view)
+> \Boracomputer\ITScope\Model\Company[] queryManufacturers($type, $view)
 
 List of all manufacturers
 
@@ -71,7 +71,7 @@ A liste of all manufacturers for master data mappings
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\CompanyApi(
+$apiInstance = new Boracomputer\ITScope\Api\CompanyApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -97,7 +97,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\Company[]**](../Model/Company.md)
+[**\Boracomputer\ITScope\Model\Company[]**](../Model/Company.md)
 
 ### Authorization
 

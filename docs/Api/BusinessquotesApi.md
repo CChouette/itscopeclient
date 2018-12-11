@@ -1,4 +1,4 @@
-# Swagger\Client\BusinessquotesApi
+# Boracomputer\ITScope\BusinessquotesApi
 
 All URIs are relative to *https://api.itscope.com/2.0*
 
@@ -10,7 +10,7 @@ Method | HTTP request | Description
 
 
 # **getQuoteByQuoteId**
-> \Swagger\Client\Model\Quote[] getQuoteByQuoteId($quote_id, $view, $type)
+> \Boracomputer\ITScope\Model\Quote[] getQuoteByQuoteId($quote_id, $view, $type)
 
 Fetch a quote by the Tscope quote ID
 
@@ -21,7 +21,7 @@ Fetch a single quote by the ITscope quote ID
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\BusinessquotesApi(
+$apiInstance = new Boracomputer\ITScope\Api\BusinessquotesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -49,7 +49,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\Quote[]**](../Model/Quote.md)
+[**\Boracomputer\ITScope\Model\Quote[]**](../Model/Quote.md)
 
 ### Authorization
 
@@ -63,7 +63,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getQuoteList**
-> \Swagger\Client\Model\Quote[] getQuoteList($view, $type, $sort, $page)
+> \Boracomputer\ITScope\Model\Quote[] getQuoteList($view, $type, $sort, $page)
 
 Fetch a list of quotes
 
@@ -74,7 +74,7 @@ Fetch a list of quotes and their statuses
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\BusinessquotesApi(
+$apiInstance = new Boracomputer\ITScope\Api\BusinessquotesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -104,7 +104,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\Quote[]**](../Model/Quote.md)
+[**\Boracomputer\ITScope\Model\Quote[]**](../Model/Quote.md)
 
 ### Authorization
 
@@ -118,7 +118,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **searchQuotes**
-> \Swagger\Client\Model\Quote[] searchQuotes($view, $type, $filter, $sort, $page)
+> \Boracomputer\ITScope\Model\Quote[] searchQuotes($view, $type, $filter, $sort, $page)
 
 Fetch quotes by filters
 
@@ -129,7 +129,7 @@ Search for quotes by using filters
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\BusinessquotesApi(
+$apiInstance = new Boracomputer\ITScope\Api\BusinessquotesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -161,7 +161,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\Quote[]**](../Model/Quote.md)
+[**\Boracomputer\ITScope\Model\Quote[]**](../Model/Quote.md)
 
 ### Authorization
 

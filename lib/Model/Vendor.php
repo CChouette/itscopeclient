@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Boracomputer\ITScope
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace Boracomputer\ITScope\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \Boracomputer\ITScope\ObjectSerializer;
 
 /**
  * Vendor Class Doc Comment
  *
  * @category Class
  * @description Verkäuferdaten zu einem Auftrag, Bestellung
- * @package  Swagger\Client
+ * @package  Boracomputer\ITScope
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,7 +59,7 @@ class Vendor implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'name' => 'string',
-        'supplier' => '\Swagger\Client\Model\Supplier'
+        'supplier' => '\Boracomputer\ITScope\Model\Supplier'
     ];
 
     /**
@@ -266,7 +266,7 @@ class Vendor implements ModelInterface, ArrayAccess
     /**
      * Gets supplier
      *
-     * @return \Swagger\Client\Model\Supplier
+     * @return \Boracomputer\ITScope\Model\Supplier
      */
     public function getSupplier()
     {
@@ -276,7 +276,7 @@ class Vendor implements ModelInterface, ArrayAccess
     /**
      * Sets supplier
      *
-     * @param \Swagger\Client\Model\Supplier $supplier Refernz auf das Lieferanten-Objekt; nur vorhanden, wenn diese Firma ein Lieferant ist
+     * @param \Boracomputer\ITScope\Model\Supplier $supplier Refernz auf das Lieferanten-Objekt; nur vorhanden, wenn diese Firma ein Lieferant ist
      *
      * @return $this
      */

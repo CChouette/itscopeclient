@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Boracomputer\ITScope
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace Boracomputer\ITScope\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \Boracomputer\ITScope\ObjectSerializer;
 
 /**
  * ProductType Class Doc Comment
  *
  * @category Class
  * @description Typ eines Produkts, z.B. Server, Prozessor.
- * @package  Swagger\Client
+ * @package  Boracomputer\ITScope
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,7 +59,7 @@ class ProductType implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'id' => 'int',
-        'product_type_group' => '\Swagger\Client\Model\ProductTypeGroup',
+        'product_type_group' => '\Boracomputer\ITScope\Model\ProductTypeGroup',
         'name' => 'string',
         'attribute_type_id1' => 'int',
         'attribute_type_name1' => 'string',
@@ -71,7 +71,7 @@ class ProductType implements ModelInterface, ArrayAccess
         'attribute_type_name4' => 'string',
         'attribute_type_id5' => 'int',
         'attribute_type_name5' => 'string',
-        'attribute_type' => '\Swagger\Client\Model\AttributeType[]'
+        'attribute_type' => '\Boracomputer\ITScope\Model\AttributeType[]'
     ];
 
     /**
@@ -413,7 +413,7 @@ class ProductType implements ModelInterface, ArrayAccess
     /**
      * Gets product_type_group
      *
-     * @return \Swagger\Client\Model\ProductTypeGroup
+     * @return \Boracomputer\ITScope\Model\ProductTypeGroup
      */
     public function getProductTypeGroup()
     {
@@ -423,7 +423,7 @@ class ProductType implements ModelInterface, ArrayAccess
     /**
      * Sets product_type_group
      *
-     * @param \Swagger\Client\Model\ProductTypeGroup $product_type_group Referenz auf Produkttyp-Gruppe (ProductTypeGroup.id, n:1)
+     * @param \Boracomputer\ITScope\Model\ProductTypeGroup $product_type_group Referenz auf Produkttyp-Gruppe (ProductTypeGroup.id, n:1)
      *
      * @return $this
      */
@@ -743,7 +743,7 @@ class ProductType implements ModelInterface, ArrayAccess
     /**
      * Gets attribute_type
      *
-     * @return \Swagger\Client\Model\AttributeType[]
+     * @return \Boracomputer\ITScope\Model\AttributeType[]
      */
     public function getAttributeType()
     {
@@ -753,7 +753,7 @@ class ProductType implements ModelInterface, ArrayAccess
     /**
      * Sets attribute_type
      *
-     * @param \Swagger\Client\Model\AttributeType[] $attribute_type Konkrete Eigenschaftstypen von Produkteigenschaften.
+     * @param \Boracomputer\ITScope\Model\AttributeType[] $attribute_type Konkrete Eigenschaftstypen von Produkteigenschaften.
      *
      * @return $this
      */

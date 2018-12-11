@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Boracomputer\ITScope
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace Boracomputer\ITScope\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
-use Swagger\Client\Configuration;
-use Swagger\Client\HeaderSelector;
-use Swagger\Client\ObjectSerializer;
+use Boracomputer\ITScope\ApiException;
+use Boracomputer\ITScope\Configuration;
+use Boracomputer\ITScope\HeaderSelector;
+use Boracomputer\ITScope\ObjectSerializer;
 
 /**
  * BusinessdocumentsApi Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Boracomputer\ITScope
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -91,7 +91,7 @@ class BusinessdocumentsApi
      * @param  string $view View (document) (required)
      * @param  string $type Output data format (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Boracomputer\ITScope\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -109,7 +109,7 @@ class BusinessdocumentsApi
      * @param  string $view View (document) (required)
      * @param  string $type Output data format (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Boracomputer\ITScope\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -351,7 +351,7 @@ class BusinessdocumentsApi
      * Validate order documents in openTRANS v2.1 format semantically
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Boracomputer\ITScope\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -366,7 +366,7 @@ class BusinessdocumentsApi
      * Validate order documents in openTRANS v2.1 format semantically
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Boracomputer\ITScope\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -557,7 +557,7 @@ class BusinessdocumentsApi
      * Validate documents in openTRANS V2.1 format against the openTRANS schema
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Boracomputer\ITScope\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -572,7 +572,7 @@ class BusinessdocumentsApi
      * Validate documents in openTRANS V2.1 format against the openTRANS schema
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Boracomputer\ITScope\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */

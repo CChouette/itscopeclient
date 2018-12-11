@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Boracomputer\ITScope
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace Boracomputer\ITScope\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
-use Swagger\Client\Configuration;
-use Swagger\Client\HeaderSelector;
-use Swagger\Client\ObjectSerializer;
+use Boracomputer\ITScope\ApiException;
+use Boracomputer\ITScope\Configuration;
+use Boracomputer\ITScope\HeaderSelector;
+use Boracomputer\ITScope\ObjectSerializer;
 
 /**
  * BusinessquotesApi Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Boracomputer\ITScope
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -91,9 +91,9 @@ class BusinessquotesApi
      * @param  string $view View (document) (required)
      * @param  string $type Output data format (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Boracomputer\ITScope\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\Quote[]
+     * @return \Boracomputer\ITScope\Model\Quote[]
      */
     public function getQuoteByQuoteId($quote_id, $view, $type)
     {
@@ -110,13 +110,13 @@ class BusinessquotesApi
      * @param  string $view View (document) (required)
      * @param  string $type Output data format (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Boracomputer\ITScope\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\Quote[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Boracomputer\ITScope\Model\Quote[], HTTP status code, HTTP response headers (array of strings)
      */
     public function getQuoteByQuoteIdWithHttpInfo($quote_id, $view, $type)
     {
-        $returnType = '\Swagger\Client\Model\Quote[]';
+        $returnType = '\Boracomputer\ITScope\Model\Quote[]';
         $request = $this->getQuoteByQuoteIdRequest($quote_id, $view, $type);
 
         try {
@@ -168,7 +168,7 @@ class BusinessquotesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Quote[]',
+                        '\Boracomputer\ITScope\Model\Quote[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -214,7 +214,7 @@ class BusinessquotesApi
      */
     public function getQuoteByQuoteIdAsyncWithHttpInfo($quote_id, $view, $type)
     {
-        $returnType = '\Swagger\Client\Model\Quote[]';
+        $returnType = '\Boracomputer\ITScope\Model\Quote[]';
         $request = $this->getQuoteByQuoteIdRequest($quote_id, $view, $type);
 
         return $this->client
@@ -392,9 +392,9 @@ class BusinessquotesApi
      * @param  string $sort Sort the results (optional, default to LAST_MODIFIED)
      * @param  int $page Large result sets are bundled in multiple pages with 50 results per page. (optional, default to 1)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Boracomputer\ITScope\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\Quote[]
+     * @return \Boracomputer\ITScope\Model\Quote[]
      */
     public function getQuoteList($view, $type, $sort = 'LAST_MODIFIED', $page = '1')
     {
@@ -412,13 +412,13 @@ class BusinessquotesApi
      * @param  string $sort Sort the results (optional, default to LAST_MODIFIED)
      * @param  int $page Large result sets are bundled in multiple pages with 50 results per page. (optional, default to 1)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Boracomputer\ITScope\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\Quote[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Boracomputer\ITScope\Model\Quote[], HTTP status code, HTTP response headers (array of strings)
      */
     public function getQuoteListWithHttpInfo($view, $type, $sort = 'LAST_MODIFIED', $page = '1')
     {
-        $returnType = '\Swagger\Client\Model\Quote[]';
+        $returnType = '\Boracomputer\ITScope\Model\Quote[]';
         $request = $this->getQuoteListRequest($view, $type, $sort, $page);
 
         try {
@@ -470,7 +470,7 @@ class BusinessquotesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Quote[]',
+                        '\Boracomputer\ITScope\Model\Quote[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -518,7 +518,7 @@ class BusinessquotesApi
      */
     public function getQuoteListAsyncWithHttpInfo($view, $type, $sort = 'LAST_MODIFIED', $page = '1')
     {
-        $returnType = '\Swagger\Client\Model\Quote[]';
+        $returnType = '\Boracomputer\ITScope\Model\Quote[]';
         $request = $this->getQuoteListRequest($view, $type, $sort, $page);
 
         return $this->client
@@ -692,9 +692,9 @@ class BusinessquotesApi
      * @param  string $sort Sort the results (optional, default to LAST_MODIFIED)
      * @param  int $page Large result sets are bundled in multiple pages with 50 results per page. (optional, default to 1)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Boracomputer\ITScope\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\Quote[]
+     * @return \Boracomputer\ITScope\Model\Quote[]
      */
     public function searchQuotes($view, $type, $filter, $sort = 'LAST_MODIFIED', $page = '1')
     {
@@ -713,13 +713,13 @@ class BusinessquotesApi
      * @param  string $sort Sort the results (optional, default to LAST_MODIFIED)
      * @param  int $page Large result sets are bundled in multiple pages with 50 results per page. (optional, default to 1)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Boracomputer\ITScope\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\Quote[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Boracomputer\ITScope\Model\Quote[], HTTP status code, HTTP response headers (array of strings)
      */
     public function searchQuotesWithHttpInfo($view, $type, $filter, $sort = 'LAST_MODIFIED', $page = '1')
     {
-        $returnType = '\Swagger\Client\Model\Quote[]';
+        $returnType = '\Boracomputer\ITScope\Model\Quote[]';
         $request = $this->searchQuotesRequest($view, $type, $filter, $sort, $page);
 
         try {
@@ -771,7 +771,7 @@ class BusinessquotesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Quote[]',
+                        '\Boracomputer\ITScope\Model\Quote[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -821,7 +821,7 @@ class BusinessquotesApi
      */
     public function searchQuotesAsyncWithHttpInfo($view, $type, $filter, $sort = 'LAST_MODIFIED', $page = '1')
     {
-        $returnType = '\Swagger\Client\Model\Quote[]';
+        $returnType = '\Boracomputer\ITScope\Model\Quote[]';
         $request = $this->searchQuotesRequest($view, $type, $filter, $sort, $page);
 
         return $this->client

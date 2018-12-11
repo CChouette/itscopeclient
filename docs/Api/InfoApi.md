@@ -1,4 +1,4 @@
-# Swagger\Client\InfoApi
+# Boracomputer\ITScope\InfoApi
 
 All URIs are relative to *https://api.itscope.com/2.0*
 
@@ -20,7 +20,7 @@ Fetches the quota.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\InfoApi(
+$apiInstance = new Boracomputer\ITScope\Api\InfoApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -64,7 +64,7 @@ Fetches the XML schemas for different view types of the ITscope API.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\InfoApi(
+$apiInstance = new Boracomputer\ITScope\Api\InfoApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()

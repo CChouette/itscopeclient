@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Boracomputer\ITScope
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace Boracomputer\ITScope\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \Boracomputer\ITScope\ObjectSerializer;
 
 /**
  * CartLineItemOrderContainer Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Boracomputer\ITScope
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -57,7 +57,7 @@ class CartLineItemOrderContainer implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'cart_line_item' => '\Swagger\Client\Model\CartLineItemOrder[]'
+        'cart_line_item' => '\Boracomputer\ITScope\Model\CartLineItemOrder[]'
     ];
 
     /**
@@ -214,7 +214,7 @@ class CartLineItemOrderContainer implements ModelInterface, ArrayAccess
     /**
      * Gets cart_line_item
      *
-     * @return \Swagger\Client\Model\CartLineItemOrder[]
+     * @return \Boracomputer\ITScope\Model\CartLineItemOrder[]
      */
     public function getCartLineItem()
     {
@@ -224,7 +224,7 @@ class CartLineItemOrderContainer implements ModelInterface, ArrayAccess
     /**
      * Sets cart_line_item
      *
-     * @param \Swagger\Client\Model\CartLineItemOrder[] $cart_line_item cart_line_item
+     * @param \Boracomputer\ITScope\Model\CartLineItemOrder[] $cart_line_item cart_line_item
      *
      * @return $this
      */

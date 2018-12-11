@@ -96,10 +96,10 @@ Name | Type | Description | Notes
 **aggregated_status_text** | **string** | Bester Verfügbarkeitsstatus | 
 **aggregated_stock** | **int** | Summe aller Lagerbestände | 
 **aggregated_supplier_items** | **int** | Summe aller Distributoren zu diesem Produkt | 
-**supplier_item** | [**\Swagger\Client\Model\SupplierItem[]**](SupplierItem.md) | Bezugsquelle eines ITscope-Produkts. Ein konkretes Angebot eines auf ITscope gelisteten Distributors. | 
-**attribute** | [**\Swagger\Client\Model\Attribute[]**](Attribute.md) | Eigenschaften zu einem Produkt. | [optional] 
-**attribute_cluster** | [**\Swagger\Client\Model\AttributeCluster[]**](AttributeCluster.md) | Eigenschaftscluster, in denen das Produkt für Merkmalssuchen gefunden werden kann. Kann je nach Menge mehrere Eigenschaftsausprägungen in Intervallen zusammenfassen, z.B. 64-128MB RAM | [optional] 
-**accessory** | [**\Swagger\Client\Model\Accessory[]**](Accessory.md) | &lt;a href&#x3D;\&quot;https://support.itscope.com/hc/de/articles/206032592\&quot;&gt;Originalzubehör und kompatibles Zubehör&lt;/a&gt; zu einem Produkt | [optional] 
+**supplier_item** | [**\Boracomputer\ITScope\Model\SupplierItem[]**](SupplierItem.md) | Bezugsquelle eines ITscope-Produkts. Ein konkretes Angebot eines auf ITscope gelisteten Distributors. | 
+**attribute** | [**\Boracomputer\ITScope\Model\Attribute[]**](Attribute.md) | Eigenschaften zu einem Produkt. | [optional] 
+**attribute_cluster** | [**\Boracomputer\ITScope\Model\AttributeCluster[]**](AttributeCluster.md) | Eigenschaftscluster, in denen das Produkt für Merkmalssuchen gefunden werden kann. Kann je nach Menge mehrere Eigenschaftsausprägungen in Intervallen zusammenfassen, z.B. 64-128MB RAM | [optional] 
+**accessory** | [**\Boracomputer\ITScope\Model\Accessory[]**](Accessory.md) | &lt;a href&#x3D;\&quot;https://support.itscope.com/hc/de/articles/206032592\&quot;&gt;Originalzubehör und kompatibles Zubehör&lt;/a&gt; zu einem Produkt | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

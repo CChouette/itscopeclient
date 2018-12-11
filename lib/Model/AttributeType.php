@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Boracomputer\ITScope
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace Boracomputer\ITScope\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \Boracomputer\ITScope\ObjectSerializer;
 
 /**
  * AttributeType Class Doc Comment
  *
  * @category Class
  * @description Konkrete Eigenschaftstypen von Produkteigenschaften.
- * @package  Swagger\Client
+ * @package  Boracomputer\ITScope
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -62,7 +62,7 @@ class AttributeType implements ModelInterface, ArrayAccess
         'name' => 'string',
         'rank' => 'int',
         'type' => 'int',
-        'attribute_unit' => '\Swagger\Client\Model\AttributeUnit',
+        'attribute_unit' => '\Boracomputer\ITScope\Model\AttributeUnit',
         'group_id' => 'int',
         'group_name' => 'string'
     ];
@@ -382,7 +382,7 @@ class AttributeType implements ModelInterface, ArrayAccess
     /**
      * Gets attribute_unit
      *
-     * @return \Swagger\Client\Model\AttributeUnit
+     * @return \Boracomputer\ITScope\Model\AttributeUnit
      */
     public function getAttributeUnit()
     {
@@ -392,7 +392,7 @@ class AttributeType implements ModelInterface, ArrayAccess
     /**
      * Sets attribute_unit
      *
-     * @param \Swagger\Client\Model\AttributeUnit $attribute_unit Referenz auf Tabelle attributeUnits
+     * @param \Boracomputer\ITScope\Model\AttributeUnit $attribute_unit Referenz auf Tabelle attributeUnits
      *
      * @return $this
      */

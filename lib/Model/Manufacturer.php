@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Boracomputer\ITScope
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace Boracomputer\ITScope\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \Boracomputer\ITScope\ObjectSerializer;
 
 /**
  * Manufacturer Class Doc Comment
  *
  * @category Class
  * @description Hersteller eines Produkts.
- * @package  Swagger\Client
+ * @package  Boracomputer\ITScope
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */

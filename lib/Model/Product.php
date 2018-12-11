@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Boracomputer\ITScope
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace Boracomputer\ITScope\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \Boracomputer\ITScope\ObjectSerializer;
 
 /**
  * Product Class Doc Comment
  *
  * @category Class
  * @description Produkt des ITscope-Katalogs.
- * @package  Swagger\Client
+ * @package  Boracomputer\ITScope
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -151,10 +151,10 @@ class Product implements ModelInterface, ArrayAccess
         'aggregated_status_text' => 'string',
         'aggregated_stock' => 'int',
         'aggregated_supplier_items' => 'int',
-        'supplier_item' => '\Swagger\Client\Model\SupplierItem[]',
-        'attribute' => '\Swagger\Client\Model\Attribute[]',
-        'attribute_cluster' => '\Swagger\Client\Model\AttributeCluster[]',
-        'accessory' => '\Swagger\Client\Model\Accessory[]'
+        'supplier_item' => '\Boracomputer\ITScope\Model\SupplierItem[]',
+        'attribute' => '\Boracomputer\ITScope\Model\Attribute[]',
+        'attribute_cluster' => '\Boracomputer\ITScope\Model\AttributeCluster[]',
+        'accessory' => '\Boracomputer\ITScope\Model\Accessory[]'
     ];
 
     /**
@@ -3800,7 +3800,7 @@ class Product implements ModelInterface, ArrayAccess
     /**
      * Gets supplier_item
      *
-     * @return \Swagger\Client\Model\SupplierItem[]
+     * @return \Boracomputer\ITScope\Model\SupplierItem[]
      */
     public function getSupplierItem()
     {
@@ -3810,7 +3810,7 @@ class Product implements ModelInterface, ArrayAccess
     /**
      * Sets supplier_item
      *
-     * @param \Swagger\Client\Model\SupplierItem[] $supplier_item Bezugsquelle eines ITscope-Produkts. Ein konkretes Angebot eines auf ITscope gelisteten Distributors.
+     * @param \Boracomputer\ITScope\Model\SupplierItem[] $supplier_item Bezugsquelle eines ITscope-Produkts. Ein konkretes Angebot eines auf ITscope gelisteten Distributors.
      *
      * @return $this
      */
@@ -3824,7 +3824,7 @@ class Product implements ModelInterface, ArrayAccess
     /**
      * Gets attribute
      *
-     * @return \Swagger\Client\Model\Attribute[]
+     * @return \Boracomputer\ITScope\Model\Attribute[]
      */
     public function getAttribute()
     {
@@ -3834,7 +3834,7 @@ class Product implements ModelInterface, ArrayAccess
     /**
      * Sets attribute
      *
-     * @param \Swagger\Client\Model\Attribute[] $attribute Eigenschaften zu einem Produkt.
+     * @param \Boracomputer\ITScope\Model\Attribute[] $attribute Eigenschaften zu einem Produkt.
      *
      * @return $this
      */
@@ -3848,7 +3848,7 @@ class Product implements ModelInterface, ArrayAccess
     /**
      * Gets attribute_cluster
      *
-     * @return \Swagger\Client\Model\AttributeCluster[]
+     * @return \Boracomputer\ITScope\Model\AttributeCluster[]
      */
     public function getAttributeCluster()
     {
@@ -3858,7 +3858,7 @@ class Product implements ModelInterface, ArrayAccess
     /**
      * Sets attribute_cluster
      *
-     * @param \Swagger\Client\Model\AttributeCluster[] $attribute_cluster Eigenschaftscluster, in denen das Produkt für Merkmalssuchen gefunden werden kann. Kann je nach Menge mehrere Eigenschaftsausprägungen in Intervallen zusammenfassen, z.B. 64-128MB RAM
+     * @param \Boracomputer\ITScope\Model\AttributeCluster[] $attribute_cluster Eigenschaftscluster, in denen das Produkt für Merkmalssuchen gefunden werden kann. Kann je nach Menge mehrere Eigenschaftsausprägungen in Intervallen zusammenfassen, z.B. 64-128MB RAM
      *
      * @return $this
      */
@@ -3872,7 +3872,7 @@ class Product implements ModelInterface, ArrayAccess
     /**
      * Gets accessory
      *
-     * @return \Swagger\Client\Model\Accessory[]
+     * @return \Boracomputer\ITScope\Model\Accessory[]
      */
     public function getAccessory()
     {
@@ -3882,7 +3882,7 @@ class Product implements ModelInterface, ArrayAccess
     /**
      * Sets accessory
      *
-     * @param \Swagger\Client\Model\Accessory[] $accessory <a href=\"https://support.itscope.com/hc/de/articles/206032592\">Originalzubehör und kompatibles Zubehör</a> zu einem Produkt
+     * @param \Boracomputer\ITScope\Model\Accessory[] $accessory <a href=\"https://support.itscope.com/hc/de/articles/206032592\">Originalzubehör und kompatibles Zubehör</a> zu einem Produkt
      *
      * @return $this
      */

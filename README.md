@@ -57,13 +57,13 @@ Please follow the [installation procedure](#installation--usage) and then run th
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\BusinesscartsApi(
+$apiInstance = new Boracomputer\ITScope\Api\BusinesscartsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $cart_id = "cart_id_example"; // string | ITscope cart ID. Use \"pool\" to access the pool
-$body = new \Swagger\Client\Model\CartLineItemOrderContainer(); // \Swagger\Client\Model\CartLineItemOrderContainer | List of one of the following combinations: Quantity (greater than 0) and: a) ITscope product ID (puid) with an optional supplier ID and optional supplierItemId OR b) supplier ID and supplier item ID. The supplier IDs can be retrieved via GET /company/distributor/, the supplier item ID is the proprietary product number of the supplier.
+$body = new \Boracomputer\ITScope\Model\CartLineItemOrderContainer(); // \Boracomputer\ITScope\Model\CartLineItemOrderContainer | List of one of the following combinations: Quantity (greater than 0) and: a) ITscope product ID (puid) with an optional supplier ID and optional supplierItemId OR b) supplier ID and supplier item ID. The supplier IDs can be retrieved via GET /company/distributor/, the supplier item ID is the proprietary product number of the supplier.
 
 try {
     $apiInstance->addLineItem($cart_id, $body);

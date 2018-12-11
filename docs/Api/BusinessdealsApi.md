@@ -1,4 +1,4 @@
-# Swagger\Client\BusinessdealsApi
+# Boracomputer\ITScope\BusinessdealsApi
 
 All URIs are relative to *https://api.itscope.com/2.0*
 
@@ -23,7 +23,7 @@ Archive order by order ID
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\BusinessdealsApi(
+$apiInstance = new Boracomputer\ITScope\Api\BusinessdealsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -60,7 +60,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getDealByOrderId**
-> \Swagger\Client\Model\Deal[] getDealByOrderId($deal_id, $view, $type)
+> \Boracomputer\ITScope\Model\Deal[] getDealByOrderId($deal_id, $view, $type)
 
 Fetch an order by the ITscope order ID
 
@@ -71,7 +71,7 @@ Fetch single orders by ITscope order ID. Links to the corresponding openTRANS 2.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\BusinessdealsApi(
+$apiInstance = new Boracomputer\ITScope\Api\BusinessdealsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -99,7 +99,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\Deal[]**](../Model/Deal.md)
+[**\Boracomputer\ITScope\Model\Deal[]**](../Model/Deal.md)
 
 ### Authorization
 
@@ -113,7 +113,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getDealList**
-> \Swagger\Client\Model\Deal[] getDealList($view, $type, $archiv, $business_type, $sort, $page)
+> \Boracomputer\ITScope\Model\Deal[] getDealList($view, $type, $archiv, $business_type, $sort, $page)
 
 Fetch list of orders
 
@@ -124,7 +124,7 @@ Fetch a list of orders and their statuses
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\BusinessdealsApi(
+$apiInstance = new Boracomputer\ITScope\Api\BusinessdealsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -158,7 +158,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\Deal[]**](../Model/Deal.md)
+[**\Boracomputer\ITScope\Model\Deal[]**](../Model/Deal.md)
 
 ### Authorization
 
@@ -183,7 +183,7 @@ Send a new order in valid openTRANS 2.1 format via ITscope to a distributor
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\BusinessdealsApi(
+$apiInstance = new Boracomputer\ITScope\Api\BusinessdealsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -220,7 +220,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **searchDeals**
-> \Swagger\Client\Model\Deal[] searchDeals($view, $type, $filter, $archiv, $business_type, $sort, $page)
+> \Boracomputer\ITScope\Model\Deal[] searchDeals($view, $type, $filter, $archiv, $business_type, $sort, $page)
 
 Search orders with filters
 
@@ -231,7 +231,7 @@ Search orders with filters
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\BusinessdealsApi(
+$apiInstance = new Boracomputer\ITScope\Api\BusinessdealsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -267,7 +267,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\Deal[]**](../Model/Deal.md)
+[**\Boracomputer\ITScope\Model\Deal[]**](../Model/Deal.md)
 
 ### Authorization
 

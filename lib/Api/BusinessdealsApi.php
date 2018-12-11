@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Boracomputer\ITScope
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace Boracomputer\ITScope\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
-use Swagger\Client\Configuration;
-use Swagger\Client\HeaderSelector;
-use Swagger\Client\ObjectSerializer;
+use Boracomputer\ITScope\ApiException;
+use Boracomputer\ITScope\Configuration;
+use Boracomputer\ITScope\HeaderSelector;
+use Boracomputer\ITScope\ObjectSerializer;
 
 /**
  * BusinessdealsApi Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Boracomputer\ITScope
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -89,7 +89,7 @@ class BusinessdealsApi
      *
      * @param  string $deal_id ITscope order ID (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Boracomputer\ITScope\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -105,7 +105,7 @@ class BusinessdealsApi
      *
      * @param  string $deal_id ITscope order ID (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Boracomputer\ITScope\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -316,9 +316,9 @@ class BusinessdealsApi
      * @param  string $view View (document) (required)
      * @param  string $type Output data format (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Boracomputer\ITScope\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\Deal[]
+     * @return \Boracomputer\ITScope\Model\Deal[]
      */
     public function getDealByOrderId($deal_id, $view, $type)
     {
@@ -335,13 +335,13 @@ class BusinessdealsApi
      * @param  string $view View (document) (required)
      * @param  string $type Output data format (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Boracomputer\ITScope\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\Deal[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Boracomputer\ITScope\Model\Deal[], HTTP status code, HTTP response headers (array of strings)
      */
     public function getDealByOrderIdWithHttpInfo($deal_id, $view, $type)
     {
-        $returnType = '\Swagger\Client\Model\Deal[]';
+        $returnType = '\Boracomputer\ITScope\Model\Deal[]';
         $request = $this->getDealByOrderIdRequest($deal_id, $view, $type);
 
         try {
@@ -393,7 +393,7 @@ class BusinessdealsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Deal[]',
+                        '\Boracomputer\ITScope\Model\Deal[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -439,7 +439,7 @@ class BusinessdealsApi
      */
     public function getDealByOrderIdAsyncWithHttpInfo($deal_id, $view, $type)
     {
-        $returnType = '\Swagger\Client\Model\Deal[]';
+        $returnType = '\Boracomputer\ITScope\Model\Deal[]';
         $request = $this->getDealByOrderIdRequest($deal_id, $view, $type);
 
         return $this->client
@@ -619,9 +619,9 @@ class BusinessdealsApi
      * @param  string $sort Sort the received orders (optional, default to LAST_MODIFIED)
      * @param  int $page Large result sets are bundled in multiple pages with 50 results per page. (optional, default to 1)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Boracomputer\ITScope\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\Deal[]
+     * @return \Boracomputer\ITScope\Model\Deal[]
      */
     public function getDealList($view, $type, $archiv = 'ALL', $business_type = 'PURCHASE', $sort = 'LAST_MODIFIED', $page = '1')
     {
@@ -641,13 +641,13 @@ class BusinessdealsApi
      * @param  string $sort Sort the received orders (optional, default to LAST_MODIFIED)
      * @param  int $page Large result sets are bundled in multiple pages with 50 results per page. (optional, default to 1)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Boracomputer\ITScope\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\Deal[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Boracomputer\ITScope\Model\Deal[], HTTP status code, HTTP response headers (array of strings)
      */
     public function getDealListWithHttpInfo($view, $type, $archiv = 'ALL', $business_type = 'PURCHASE', $sort = 'LAST_MODIFIED', $page = '1')
     {
-        $returnType = '\Swagger\Client\Model\Deal[]';
+        $returnType = '\Boracomputer\ITScope\Model\Deal[]';
         $request = $this->getDealListRequest($view, $type, $archiv, $business_type, $sort, $page);
 
         try {
@@ -699,7 +699,7 @@ class BusinessdealsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Deal[]',
+                        '\Boracomputer\ITScope\Model\Deal[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -751,7 +751,7 @@ class BusinessdealsApi
      */
     public function getDealListAsyncWithHttpInfo($view, $type, $archiv = 'ALL', $business_type = 'PURCHASE', $sort = 'LAST_MODIFIED', $page = '1')
     {
-        $returnType = '\Swagger\Client\Model\Deal[]';
+        $returnType = '\Boracomputer\ITScope\Model\Deal[]';
         $request = $this->getDealListRequest($view, $type, $archiv, $business_type, $sort, $page);
 
         return $this->client
@@ -931,7 +931,7 @@ class BusinessdealsApi
      *
      * @param  string $distributor_id ITscope distributor ID (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Boracomputer\ITScope\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -947,7 +947,7 @@ class BusinessdealsApi
      *
      * @param  string $distributor_id ITscope distributor ID (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Boracomputer\ITScope\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1162,9 +1162,9 @@ class BusinessdealsApi
      * @param  string $sort Sort the received orders (optional, default to LAST_MODIFIED)
      * @param  int $page Large result sets are bundled in multiple pages with 50 results per page. (optional, default to 1)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Boracomputer\ITScope\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\Deal[]
+     * @return \Boracomputer\ITScope\Model\Deal[]
      */
     public function searchDeals($view, $type, $filter, $archiv = 'ALL', $business_type = 'PURCHASE', $sort = 'LAST_MODIFIED', $page = '1')
     {
@@ -1185,13 +1185,13 @@ class BusinessdealsApi
      * @param  string $sort Sort the received orders (optional, default to LAST_MODIFIED)
      * @param  int $page Large result sets are bundled in multiple pages with 50 results per page. (optional, default to 1)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Boracomputer\ITScope\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\Deal[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Boracomputer\ITScope\Model\Deal[], HTTP status code, HTTP response headers (array of strings)
      */
     public function searchDealsWithHttpInfo($view, $type, $filter, $archiv = 'ALL', $business_type = 'PURCHASE', $sort = 'LAST_MODIFIED', $page = '1')
     {
-        $returnType = '\Swagger\Client\Model\Deal[]';
+        $returnType = '\Boracomputer\ITScope\Model\Deal[]';
         $request = $this->searchDealsRequest($view, $type, $filter, $archiv, $business_type, $sort, $page);
 
         try {
@@ -1243,7 +1243,7 @@ class BusinessdealsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Deal[]',
+                        '\Boracomputer\ITScope\Model\Deal[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1297,7 +1297,7 @@ class BusinessdealsApi
      */
     public function searchDealsAsyncWithHttpInfo($view, $type, $filter, $archiv = 'ALL', $business_type = 'PURCHASE', $sort = 'LAST_MODIFIED', $page = '1')
     {
-        $returnType = '\Swagger\Client\Model\Deal[]';
+        $returnType = '\Boracomputer\ITScope\Model\Deal[]';
         $request = $this->searchDealsRequest($view, $type, $filter, $archiv, $business_type, $sort, $page);
 
         return $this->client

@@ -28,6 +28,6 @@
         "friendsofphp/php-cs-fixer": "~1.12"
     },
     "autoload": {
-        "psr-4": { "Swagger\\Client\\" : "lib/" }
+        "psr-4": { "Boracomputer\\ITScope\\" : "lib/" }
     }
 }

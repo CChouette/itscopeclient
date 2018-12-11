@@ -1,4 +1,4 @@
-# Swagger\Client\ProductsApi
+# Boracomputer\ITScope\ProductsApi
 
 All URIs are relative to *https://api.itscope.com/2.0*
 
@@ -24,7 +24,7 @@ Download an export via ID, which was defined in ITscope.com.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\ProductsApi(
+$apiInstance = new Boracomputer\ITScope\Api\ProductsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -72,7 +72,7 @@ Fetch product datasheet by PUID (ITscope product ID)
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\ProductsApi(
+$apiInstance = new Boracomputer\ITScope\Api\ProductsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -117,7 +117,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **queryProductByEan**
-> \Swagger\Client\Model\Product[] queryProductByEan($ean, $type, $view, $realtime, $plzproducts, $accept_language)
+> \Boracomputer\ITScope\Model\Product[] queryProductByEan($ean, $type, $view, $realtime, $plzproducts, $accept_language)
 
 Fetch product by EAN
 
@@ -128,7 +128,7 @@ Fetch a single product by EAN or UPC. As our catalogue can have multiple product
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\ProductsApi(
+$apiInstance = new Boracomputer\ITScope\Api\ProductsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -162,7 +162,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\Product[]**](../Model/Product.md)
+[**\Boracomputer\ITScope\Model\Product[]**](../Model/Product.md)
 
 ### Authorization
 
@@ -176,7 +176,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **queryProductById**
-> \Swagger\Client\Model\Product[] queryProductById($itscopeid, $type, $view, $realtime, $accept_language)
+> \Boracomputer\ITScope\Model\Product[] queryProductById($itscopeid, $type, $view, $realtime, $accept_language)
 
 Fetch product by ID
 
@@ -187,7 +187,7 @@ Fetch a single product by PUID (ITscope product ID)
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\ProductsApi(
+$apiInstance = new Boracomputer\ITScope\Api\ProductsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -219,7 +219,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\Product[]**](../Model/Product.md)
+[**\Boracomputer\ITScope\Model\Product[]**](../Model/Product.md)
 
 ### Authorization
 
@@ -233,7 +233,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **queryProductTypes**
-> \Swagger\Client\Model\ProductType[] queryProductTypes($type, $view)
+> \Boracomputer\ITScope\Model\ProductType[] queryProductTypes($type, $view)
 
 List of all product types
 
@@ -244,7 +244,7 @@ A list of all product types for master data mappings.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\ProductsApi(
+$apiInstance = new Boracomputer\ITScope\Api\ProductsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -270,7 +270,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\ProductType[]**](../Model/ProductType.md)
+[**\Boracomputer\ITScope\Model\ProductType[]**](../Model/ProductType.md)
 
 ### Authorization
 
@@ -284,7 +284,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **queryProducts**
-> \Swagger\Client\Model\Product[] queryProducts($filter, $type, $view, $realtime, $plzproducts, $page, $item, $sort, $accept_language)
+> \Boracomputer\ITScope\Model\Product[] queryProducts($filter, $type, $view, $realtime, $plzproducts, $page, $item, $sort, $accept_language)
 
 Search products by filter
 
@@ -295,7 +295,7 @@ Fetch single or multiple products, filter and sort them. One or more languages f
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\ProductsApi(
+$apiInstance = new Boracomputer\ITScope\Api\ProductsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -335,7 +335,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\Product[]**](../Model/Product.md)
+[**\Boracomputer\ITScope\Model\Product[]**](../Model/Product.md)
 
 ### Authorization
 

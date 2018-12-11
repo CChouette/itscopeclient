@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Boracomputer\ITScope
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace Boracomputer\ITScope\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \Boracomputer\ITScope\ObjectSerializer;
 
 /**
  * Deal Class Doc Comment
  *
  * @category Class
  * @description Detailinformationen zu einem Auftrag, Bestellung
- * @package  Swagger\Client
+ * @package  Boracomputer\ITScope
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -64,11 +64,11 @@ class Deal implements ModelInterface, ArrayAccess
         'status_message' => 'string',
         'status_date' => '\DateTime',
         'archived' => 'bool',
-        'vendor' => '\Swagger\Client\Model\Vendor',
-        'order' => '\Swagger\Client\Model\Order[]',
-        'orderresponse' => '\Swagger\Client\Model\Orderresponse[]',
-        'dispatchnotification' => '\Swagger\Client\Model\Dispatchnotification[]',
-        'invoice' => '\Swagger\Client\Model\Invoice[]'
+        'vendor' => '\Boracomputer\ITScope\Model\Vendor',
+        'order' => '\Boracomputer\ITScope\Model\Order[]',
+        'orderresponse' => '\Boracomputer\ITScope\Model\Orderresponse[]',
+        'dispatchnotification' => '\Boracomputer\ITScope\Model\Dispatchnotification[]',
+        'invoice' => '\Boracomputer\ITScope\Model\Invoice[]'
     ];
 
     /**
@@ -503,7 +503,7 @@ class Deal implements ModelInterface, ArrayAccess
     /**
      * Gets vendor
      *
-     * @return \Swagger\Client\Model\Vendor
+     * @return \Boracomputer\ITScope\Model\Vendor
      */
     public function getVendor()
     {
@@ -513,7 +513,7 @@ class Deal implements ModelInterface, ArrayAccess
     /**
      * Sets vendor
      *
-     * @param \Swagger\Client\Model\Vendor $vendor Referenz auf den Verkäufer (interner Key, n:1)
+     * @param \Boracomputer\ITScope\Model\Vendor $vendor Referenz auf den Verkäufer (interner Key, n:1)
      *
      * @return $this
      */
@@ -527,7 +527,7 @@ class Deal implements ModelInterface, ArrayAccess
     /**
      * Gets order
      *
-     * @return \Swagger\Client\Model\Order[]
+     * @return \Boracomputer\ITScope\Model\Order[]
      */
     public function getOrder()
     {
@@ -537,7 +537,7 @@ class Deal implements ModelInterface, ArrayAccess
     /**
      * Sets order
      *
-     * @param \Swagger\Client\Model\Order[] $order Details zur Liste der <a href=\"https://support.itscope.com/hc/de/articles/206814239\">OpenTrans 2.1 ORDER</a> Dokumente
+     * @param \Boracomputer\ITScope\Model\Order[] $order Details zur Liste der <a href=\"https://support.itscope.com/hc/de/articles/206814239\">OpenTrans 2.1 ORDER</a> Dokumente
      *
      * @return $this
      */
@@ -551,7 +551,7 @@ class Deal implements ModelInterface, ArrayAccess
     /**
      * Gets orderresponse
      *
-     * @return \Swagger\Client\Model\Orderresponse[]
+     * @return \Boracomputer\ITScope\Model\Orderresponse[]
      */
     public function getOrderresponse()
     {
@@ -561,7 +561,7 @@ class Deal implements ModelInterface, ArrayAccess
     /**
      * Sets orderresponse
      *
-     * @param \Swagger\Client\Model\Orderresponse[] $orderresponse Details zur Liste der <a href=\"https://support.itscope.com/hc/de/articles/206814239\">OpenTrans 2.1 ORDERRESPONSE</a> Dokumente
+     * @param \Boracomputer\ITScope\Model\Orderresponse[] $orderresponse Details zur Liste der <a href=\"https://support.itscope.com/hc/de/articles/206814239\">OpenTrans 2.1 ORDERRESPONSE</a> Dokumente
      *
      * @return $this
      */
@@ -575,7 +575,7 @@ class Deal implements ModelInterface, ArrayAccess
     /**
      * Gets dispatchnotification
      *
-     * @return \Swagger\Client\Model\Dispatchnotification[]
+     * @return \Boracomputer\ITScope\Model\Dispatchnotification[]
      */
     public function getDispatchnotification()
     {
@@ -585,7 +585,7 @@ class Deal implements ModelInterface, ArrayAccess
     /**
      * Sets dispatchnotification
      *
-     * @param \Swagger\Client\Model\Dispatchnotification[] $dispatchnotification Details zur Liste der <a href=\"https://support.itscope.com/hc/de/articles/206814239\">OpenTrans 2.1 DISPATCHNOTIFICATION</a> Dokumente
+     * @param \Boracomputer\ITScope\Model\Dispatchnotification[] $dispatchnotification Details zur Liste der <a href=\"https://support.itscope.com/hc/de/articles/206814239\">OpenTrans 2.1 DISPATCHNOTIFICATION</a> Dokumente
      *
      * @return $this
      */
@@ -599,7 +599,7 @@ class Deal implements ModelInterface, ArrayAccess
     /**
      * Gets invoice
      *
-     * @return \Swagger\Client\Model\Invoice[]
+     * @return \Boracomputer\ITScope\Model\Invoice[]
      */
     public function getInvoice()
     {
@@ -609,7 +609,7 @@ class Deal implements ModelInterface, ArrayAccess
     /**
      * Sets invoice
      *
-     * @param \Swagger\Client\Model\Invoice[] $invoice Details zur Liste der <a href=\"https://support.itscope.com/hc/de/articles/206814239\">OpenTrans 2.1 INVOICE</a> Dokumente
+     * @param \Boracomputer\ITScope\Model\Invoice[] $invoice Details zur Liste der <a href=\"https://support.itscope.com/hc/de/articles/206814239\">OpenTrans 2.1 INVOICE</a> Dokumente
      *
      * @return $this
      */

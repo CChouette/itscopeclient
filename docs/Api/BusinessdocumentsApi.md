@@ -1,4 +1,4 @@
-# Swagger\Client\BusinessdocumentsApi
+# Boracomputer\ITScope\BusinessdocumentsApi
 
 All URIs are relative to *https://api.itscope.com/2.0*
 
@@ -21,7 +21,7 @@ Fetch certain business documents by an ITscope Transaction ID. The current docum
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\BusinessdocumentsApi(
+$apiInstance = new Boracomputer\ITScope\Api\BusinessdocumentsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -73,7 +73,7 @@ ORDER documents in the openTRANS v2.1 format can be checked whether they are sem
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\BusinessdocumentsApi(
+$apiInstance = new Boracomputer\ITScope\Api\BusinessdocumentsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -117,7 +117,7 @@ Documents of type ORDER, ORDERRESPONSE, DISPATCHNOTIFICATION and INVOICE can be 
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\BusinessdocumentsApi(
+$apiInstance = new Boracomputer\ITScope\Api\BusinessdocumentsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()

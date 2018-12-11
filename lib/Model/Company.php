@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Boracomputer\ITScope
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace Boracomputer\ITScope\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \Boracomputer\ITScope\ObjectSerializer;
 
 /**
  * Company Class Doc Comment
  *
  * @category Class
  * @description Jeder Hersteller oder Lieferant ist einer Firma zugeordnet
- * @package  Swagger\Client
+ * @package  Boracomputer\ITScope
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -63,8 +63,8 @@ class Company implements ModelInterface, ArrayAccess
         'zip' => 'string',
         'city' => 'string',
         'country' => 'string',
-        'manufacturer' => '\Swagger\Client\Model\Manufacturer',
-        'supplier' => '\Swagger\Client\Model\Supplier'
+        'manufacturer' => '\Boracomputer\ITScope\Model\Manufacturer',
+        'supplier' => '\Boracomputer\ITScope\Model\Supplier'
     ];
 
     /**
@@ -470,7 +470,7 @@ class Company implements ModelInterface, ArrayAccess
     /**
      * Gets manufacturer
      *
-     * @return \Swagger\Client\Model\Manufacturer
+     * @return \Boracomputer\ITScope\Model\Manufacturer
      */
     public function getManufacturer()
     {
@@ -480,7 +480,7 @@ class Company implements ModelInterface, ArrayAccess
     /**
      * Sets manufacturer
      *
-     * @param \Swagger\Client\Model\Manufacturer $manufacturer Referenz auf das Hersteller-Objekt; nur vorhanden, wenn diese Firma ein Hersteller ist
+     * @param \Boracomputer\ITScope\Model\Manufacturer $manufacturer Referenz auf das Hersteller-Objekt; nur vorhanden, wenn diese Firma ein Hersteller ist
      *
      * @return $this
      */
@@ -494,7 +494,7 @@ class Company implements ModelInterface, ArrayAccess
     /**
      * Gets supplier
      *
-     * @return \Swagger\Client\Model\Supplier
+     * @return \Boracomputer\ITScope\Model\Supplier
      */
     public function getSupplier()
     {
@@ -504,7 +504,7 @@ class Company implements ModelInterface, ArrayAccess
     /**
      * Sets supplier
      *
-     * @param \Swagger\Client\Model\Supplier $supplier Refernz auf das Lieferanten-Objekt; nur vorhanden, wenn diese Firma ein Lieferant ist
+     * @param \Boracomputer\ITScope\Model\Supplier $supplier Refernz auf das Lieferanten-Objekt; nur vorhanden, wenn diese Firma ein Lieferant ist
      *
      * @return $this
      */

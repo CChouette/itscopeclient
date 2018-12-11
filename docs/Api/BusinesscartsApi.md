@@ -1,4 +1,4 @@
-# Swagger\Client\BusinesscartsApi
+# Boracomputer\ITScope\BusinesscartsApi
 
 All URIs are relative to *https://api.itscope.com/2.0*
 
@@ -25,13 +25,13 @@ Add one or more products with a given quantity to the shopping cart. If no suppl
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\BusinesscartsApi(
+$apiInstance = new Boracomputer\ITScope\Api\BusinesscartsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $cart_id = "cart_id_example"; // string | ITscope cart ID. Use \"pool\" to access the pool
-$body = new \Swagger\Client\Model\CartLineItemOrderContainer(); // \Swagger\Client\Model\CartLineItemOrderContainer | List of one of the following combinations: Quantity (greater than 0) and: a) ITscope product ID (puid) with an optional supplier ID and optional supplierItemId OR b) supplier ID and supplier item ID. The supplier IDs can be retrieved via GET /company/distributor/, the supplier item ID is the proprietary product number of the supplier.
+$body = new \Boracomputer\ITScope\Model\CartLineItemOrderContainer(); // \Boracomputer\ITScope\Model\CartLineItemOrderContainer | List of one of the following combinations: Quantity (greater than 0) and: a) ITscope product ID (puid) with an optional supplier ID and optional supplierItemId OR b) supplier ID and supplier item ID. The supplier IDs can be retrieved via GET /company/distributor/, the supplier item ID is the proprietary product number of the supplier.
 
 try {
     $apiInstance->addLineItem($cart_id, $body);
@@ -46,7 +46,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **cart_id** | **string**| ITscope cart ID. Use \&quot;pool\&quot; to access the pool |
- **body** | [**\Swagger\Client\Model\CartLineItemOrderContainer**](../Model/CartLineItemOrderContainer.md)| List of one of the following combinations: Quantity (greater than 0) and: a) ITscope product ID (puid) with an optional supplier ID and optional supplierItemId OR b) supplier ID and supplier item ID. The supplier IDs can be retrieved via GET /company/distributor/, the supplier item ID is the proprietary product number of the supplier. | [optional]
+ **body** | [**\Boracomputer\ITScope\Model\CartLineItemOrderContainer**](../Model/CartLineItemOrderContainer.md)| List of one of the following combinations: Quantity (greater than 0) and: a) ITscope product ID (puid) with an optional supplier ID and optional supplierItemId OR b) supplier ID and supplier item ID. The supplier IDs can be retrieved via GET /company/distributor/, the supplier item ID is the proprietary product number of the supplier. | [optional]
 
 ### Return type
 
@@ -75,12 +75,12 @@ Create a shopping cart with the given name. The cart will be assigned to the use
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\BusinesscartsApi(
+$apiInstance = new Boracomputer\ITScope\Api\BusinesscartsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Model\CartOrder(); // \Swagger\Client\Model\CartOrder | The cart's name
+$body = new \Boracomputer\ITScope\Model\CartOrder(); // \Boracomputer\ITScope\Model\CartOrder | The cart's name
 
 try {
     $apiInstance->createCart($body);
@@ -94,7 +94,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\CartOrder**](../Model/CartOrder.md)| The cart&#39;s name | [optional]
+ **body** | [**\Boracomputer\ITScope\Model\CartOrder**](../Model/CartOrder.md)| The cart&#39;s name | [optional]
 
 ### Return type
 
@@ -123,13 +123,13 @@ Edit a shopping cart. The pool cannot be edited.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\BusinesscartsApi(
+$apiInstance = new Boracomputer\ITScope\Api\BusinesscartsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $cart_id = "cart_id_example"; // string | ITscope cart ID. \"pool\" is not accepted here
-$body = new \Swagger\Client\Model\CartOrder(); // \Swagger\Client\Model\CartOrder | The cart's name
+$body = new \Boracomputer\ITScope\Model\CartOrder(); // \Boracomputer\ITScope\Model\CartOrder | The cart's name
 
 try {
     $apiInstance->editCart($cart_id, $body);
@@ -144,7 +144,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **cart_id** | **string**| ITscope cart ID. \&quot;pool\&quot; is not accepted here |
- **body** | [**\Swagger\Client\Model\CartOrder**](../Model/CartOrder.md)| The cart&#39;s name | [optional]
+ **body** | [**\Boracomputer\ITScope\Model\CartOrder**](../Model/CartOrder.md)| The cart&#39;s name | [optional]
 
 ### Return type
 
@@ -173,7 +173,7 @@ Show basic cart information with cart.xml or cart.json. Show cart line items wit
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\BusinesscartsApi(
+$apiInstance = new Boracomputer\ITScope\Api\BusinesscartsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -225,7 +225,7 @@ List all shopping carts.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\BusinesscartsApi(
+$apiInstance = new Boracomputer\ITScope\Api\BusinesscartsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -275,7 +275,7 @@ Remove a shopping cart and all its line items. The pool cannot be removed.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\BusinesscartsApi(
+$apiInstance = new Boracomputer\ITScope\Api\BusinesscartsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -323,7 +323,7 @@ Remove a line item from your shopping cart.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\BusinesscartsApi(
+$apiInstance = new Boracomputer\ITScope\Api\BusinesscartsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
